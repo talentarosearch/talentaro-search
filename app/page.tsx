@@ -1,174 +1,130 @@
 export default function Home() {
   return (
-    <main className="min-h-screen bg-white text-gray-900 overflow-hidden">
-
-      {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-emerald-50 via-white to-teal-50 py-28 px-6">
-
-        {/* Background Effects */}
-        <div className="absolute top-0 left-0 w-72 h-72 bg-emerald-200 rounded-full blur-3xl opacity-30"></div>
-        <div className="absolute bottom-0 right-0 w-96 h-96 bg-teal-100 rounded-full blur-3xl opacity-40"></div>
-
-        <div className="relative max-w-7xl mx-auto grid lg:grid-cols-2 gap-20 items-center">
-
-          {/* Left Content */}
+    <main className="min-h-screen bg-white text-gray-900">
+      {/* HERO */}
+      <section className="relative overflow-hidden bg-gradient-to-br from-[#eef7f4] via-white to-[#f7faf9] py-28 px-6">
+        <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-20 items-center">
+          
+          {/* LEFT */}
           <div>
-
-            {/* Company Badge */}
-            <div className="inline-flex items-center gap-3 bg-white border border-emerald-100 shadow-sm px-5 py-3 rounded-full">
-
-              <div className="w-3 h-3 bg-emerald-500 rounded-full"></div>
-
-              <span className="text-xl md:text-2xl font-black tracking-tight bg-gradient-to-r from-emerald-700 to-teal-600 bg-clip-text text-transparent">
-                Talentaro Search
-              </span>
-
+            <div className="inline-flex items-center rounded-full bg-emerald-100 px-5 py-2 text-sm font-semibold tracking-wide text-emerald-900">
+              TALENTARO SEARCH
             </div>
 
-            {/* Main Heading */}
-            <h1 className="mt-8 text-6xl md:text-7xl font-black leading-[1.05] tracking-tight text-gray-900">
-
-              Elite Talent for
-
-              <span className="block bg-gradient-to-r from-emerald-700 to-teal-600 bg-clip-text text-transparent">
-                High-Growth Companies
-              </span>
-
+            <h1 className="mt-8 text-6xl md:text-7xl font-black leading-[0.95] tracking-[-0.04em] text-gray-950">
+              Elite Talent
+              <br />
+              For Modern
+              <br />
+              Companies
             </h1>
 
-            {/* Description */}
-            <p className="mt-8 text-xl text-gray-600 leading-relaxed max-w-2xl">
-
-              Talentaro Search partners with ambitious companies to hire
-              exceptional professionals across technology, finance,
-              healthcare, and executive leadership.
-
+            <p className="mt-8 max-w-2xl text-xl leading-9 text-gray-600">
+              Talentaro Search partners with ambitious startups and global
+              businesses to deliver exceptional hiring across technology,
+              finance, healthcare, operations, and executive leadership.
             </p>
 
+            <a
+              href="mailto:sagar@talentarosearch.com"
+              className="mt-10 inline-flex items-center rounded-2xl bg-emerald-900 px-8 py-5 text-lg font-semibold text-white shadow-xl transition hover:scale-[1.02] hover:bg-black"
+            >
+              Contact Us
+            </a>
           </div>
 
-          {/* Right Card */}
-          <div className="bg-white/90 backdrop-blur-xl rounded-[36px] shadow-2xl p-10 border border-gray-100">
+          {/* RIGHT */}
+          <div className="relative">
+            <div className="absolute -top-10 -left-10 h-40 w-40 rounded-full bg-emerald-100 blur-3xl opacity-60"></div>
 
-            <div className="grid grid-cols-2 gap-5">
+            <div className="relative rounded-[36px] border border-gray-100 bg-white p-8 shadow-2xl">
+              <div className="grid grid-cols-2 gap-5">
 
-              {[
-                {
-                  title: "Technology",
-                  desc: "Engineering & Product",
-                },
-                {
-                  title: "Finance",
-                  desc: "Accounting & FP&A",
-                },
-                {
-                  title: "Healthcare",
-                  desc: "Clinical & Operations",
-                },
-                {
-                  title: "Leadership",
-                  desc: "Executive Search",
-                },
-              ].map((item) => (
-                <div
-                  key={item.title}
-                  className="bg-gradient-to-br from-emerald-50 to-white rounded-3xl p-6 border border-emerald-100 hover:shadow-lg transition-all duration-300"
-                >
-
-                  <h3 className="font-bold text-xl text-gray-900">
-                    {item.title}
-                  </h3>
-
-                  <p className="text-sm text-gray-500 mt-3 leading-relaxed">
-                    {item.desc}
+                <div className="rounded-3xl bg-[#f4faf8] p-6 transition hover:-translate-y-1 hover:shadow-lg">
+                  <h3 className="text-2xl font-bold">Technology</h3>
+                  <p className="mt-3 text-gray-500">
+                    Engineering, Product & AI Talent
                   </p>
-
                 </div>
-              ))}
 
+                <div className="rounded-3xl bg-[#f4faf8] p-6 transition hover:-translate-y-1 hover:shadow-lg">
+                  <h3 className="text-2xl font-bold">Finance</h3>
+                  <p className="mt-3 text-gray-500">
+                    Accounting, FP&A & Strategy
+                  </p>
+                </div>
+
+                <div className="rounded-3xl bg-[#f4faf8] p-6 transition hover:-translate-y-1 hover:shadow-lg">
+                  <h3 className="text-2xl font-bold">Healthcare</h3>
+                  <p className="mt-3 text-gray-500">
+                    Clinical & Operational Leadership
+                  </p>
+                </div>
+
+                <div className="rounded-3xl bg-[#f4faf8] p-6 transition hover:-translate-y-1 hover:shadow-lg">
+                  <h3 className="text-2xl font-bold">Executive</h3>
+                  <p className="mt-3 text-gray-500">
+                    C-Level & Leadership Search
+                  </p>
+                </div>
+
+              </div>
             </div>
-
           </div>
-
         </div>
       </section>
 
-      {/* Services */}
-      <section className="py-24 px-6 bg-white">
-
+      {/* SERVICES */}
+      <section className="py-28 px-6 bg-white">
         <div className="max-w-7xl mx-auto">
 
-          <div className="text-center max-w-3xl mx-auto">
-
-            <h2 className="text-5xl font-black tracking-tight text-gray-900">
+          <div className="max-w-3xl">
+            <p className="text-sm font-bold uppercase tracking-[0.3em] text-emerald-700">
               Recruiting Services
-            </h2>
-
-            <p className="mt-6 text-xl text-gray-600 leading-relaxed">
-              Strategic recruiting solutions designed for fast-scaling companies.
             </p>
 
+            <h2 className="mt-5 text-5xl font-black leading-tight tracking-tight">
+              Strategic Hiring
+              <br />
+              Built For Growth
+            </h2>
+
+            <p className="mt-6 text-xl leading-9 text-gray-600">
+              We help high-growth companies scale with precision by delivering
+              world-class recruiting solutions tailored to modern business needs.
+            </p>
           </div>
 
-          <div className="mt-20 grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="mt-16 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
 
             {[
               "Executive Search",
               "Permanent Hiring",
-              "Contract Staffing",
               "Global Recruitment",
               "Tech Hiring",
               "Finance Recruitment",
+              "Leadership Advisory",
             ].map((service) => (
               <div
                 key={service}
-                className="group border border-gray-100 rounded-[32px] p-8 shadow-sm hover:shadow-2xl transition-all duration-300 hover:-translate-y-1 bg-white"
+                className="group rounded-[32px] border border-gray-100 bg-white p-10 shadow-sm transition hover:-translate-y-2 hover:shadow-2xl"
               >
+                <div className="mb-8 h-14 w-14 rounded-2xl bg-emerald-100"></div>
 
-                <h3 className="text-2xl font-bold text-gray-900">
+                <h3 className="text-3xl font-bold tracking-tight">
                   {service}
                 </h3>
 
-                <p className="mt-4 text-gray-600 leading-relaxed">
-                  Premium hiring support tailored to your business goals and growth strategy.
+                <p className="mt-5 text-lg leading-8 text-gray-600">
+                  Premium recruiting solutions designed to help companies hire
+                  exceptional talent globally.
                 </p>
-
               </div>
             ))}
 
           </div>
-
         </div>
-
       </section>
-
-      {/* CTA */}
-      <section className="py-24 px-6">
-
-        <div className="max-w-6xl mx-auto bg-gradient-to-r from-emerald-900 to-teal-800 rounded-[36px] p-14 text-white shadow-2xl">
-
-          <h2 className="text-5xl font-black leading-tight tracking-tight">
-            Build Your Team With Confidence
-          </h2>
-
-          <p className="mt-6 text-emerald-100 text-xl max-w-2xl leading-relaxed">
-
-            Talentaro Search partners with startups and enterprises to deliver
-            world-class talent globally.
-
-          </p>
-
-          <a
-            href="mailto:sagar@talentarosearch.com"
-            className="inline-block mt-10 bg-white text-emerald-900 px-8 py-4 rounded-2xl font-bold text-lg hover:scale-105 transition-all duration-300 shadow-lg"
-          >
-            Contact Us
-          </a>
-
-        </div>
-
-      </section>
-
     </main>
   );
 }
