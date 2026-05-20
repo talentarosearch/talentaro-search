@@ -30,7 +30,7 @@ export default function Home() {
   return (
     <main className="bg-[#f6f6f4] min-h-screen relative overflow-x-hidden">
       
-      {/* BACKGROUND SHAPES (Placed here globally so they aren't cut off by margins) */}
+      {/* BACKGROUND SHAPES */}
       <div className="absolute left-0 top-[140px] w-[35vw] h-[35vw] max-w-[500px] max-h-[500px] bg-[#e8f3ef] rounded-br-[220px] z-0 pointer-events-none" />
       <div className="absolute left-0 top-[140px] w-[110px] h-[110px] bg-[#3db39b] z-0 pointer-events-none" />
       <div
@@ -41,9 +41,9 @@ export default function Home() {
       {/* FIXED MAX-WIDTH STRUCTURE FOR ALL INTERIOR CONTENT */}
       <div className="max-w-[1140px] mx-auto px-6 sm:px-8 relative z-10">
         
-        {/* NAVBAR (Width aligned precisely with content grids) */}
+        {/* NAVBAR (Updated with justify-center to center the brand identity) */}
         <div className="w-full pt-7">
-          <div className="bg-white rounded-[24px] shadow-sm py-5 px-8 flex items-center border border-gray-100/80">
+          <div className="bg-white rounded-[24px] shadow-sm py-5 px-8 flex items-center justify-center border border-gray-100/80">
             <div className="flex items-center gap-4">
               <div className="grid grid-cols-2 gap-1">
                 <div className="w-4 h-4 bg-[#0b8f67] rounded-tl-sm"></div>
